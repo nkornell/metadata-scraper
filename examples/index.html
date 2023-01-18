@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+
+<script>
+const getMetaData = require('../src/index.ts')
+
+const run = async function() {
+	const url = 'https://github.com/BetaHuhn/metadata-scraper'
+	const data = await getMetaData(url)
+	console.log(data)
+}
+
+run()
+</script>
+</head>
+</html>
